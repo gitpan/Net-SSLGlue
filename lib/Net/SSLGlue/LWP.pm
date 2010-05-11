@@ -129,7 +129,17 @@ Net::SSLGlue::LWP - proper certificate checking for https in LWP
 
 	{
 		local %Net::SSLGlue::LWP::SSLopts = %Net::SSLGlue::LWP::SSLopts;
-		$Net::SSLGlue::LWP::SSLopts{SSL_verify_mode} = 0; # no verification
+
+		# switch off verification
+		$Net::SSLGlue::LWP::SSLopts{SSL_verify_mode} = 0; 
+
+		# or: set different verification policy, because cert does
+		# not conform to RFC (wildcards in CN are not allowed for https,
+		# but some servers do it anyway)
+		$Net::SSLGlue::LWP::SSLopts{SSL_verifycn_scheme} = {
+			wildcards_in_cn => 'anywhere',
+			check_cn => 'always',
+		};
 	}
 
 
