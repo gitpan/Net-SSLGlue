@@ -14,4 +14,5 @@ examples/lwp_post.pl
 examples/send-ssl-mail.pl
 examples/send-starttls-mail.pl
 Changes
+README
 META.yml                                 Module meta-data (added by MakeMaker)
