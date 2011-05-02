@@ -1,5 +1,5 @@
 package Net::SSLGlue;
-our $VERSION = 0.5;
+our $VERSION = 0.6;
 
 =head1 NAME
 
@@ -8,11 +8,12 @@ Net::SSLGlue - add/extend SSL support for common perl modules
 =head1 DESCRIPTION
 
 Some commonly used perl modules don't have SSL support at all, even if the
-protocol would support it. Others have SSL support, but most of them don't do
-proper checking of the servers certificate.
+protocol supports it. Others have SSL support, but most of them don't do
+proper checking of the server's certificate.
 
-The C<Net::SSLGlue::*> modules try to add SSL support or proper certificate to
-these modules. Currently is support for the following modules available:
+The C<Net::SSLGlue::*> modules try to add SSL support or proper certificate
+checking to these modules. Currently support for the following modules is
+available:
 
 =over 4
 
