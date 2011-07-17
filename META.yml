@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Net-SSLGlue
-version:            0.7
+version:            0.8
 abstract:           ~
 author:  []
 license:            unknown
