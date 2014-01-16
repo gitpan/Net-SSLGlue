@@ -22,5 +22,4 @@ t/external/02_smtp.t
 t/external/03_lwp.t
 t/external/04_pop3.t
 t/external/05_ftp.t
-META.yml                                 Module YAML meta-data (added by MakeMaker)
-META.json                                Module JSON meta-data (added by MakeMaker)
+META.yml                                 Module meta-data (added by MakeMaker)

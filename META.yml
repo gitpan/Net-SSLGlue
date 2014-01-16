@@ -1,24 +1,23 @@
----
-abstract: unknown
-author:
-  - unknown
-build_requires:
-  ExtUtils::MakeMaker: 0
+--- #YAML:1.0
+name:               Net-SSLGlue
+version:            1.052
+abstract:           ~
+author:  []
+license:            unknown
+distribution_type:  module
 configure_requires:
-  ExtUtils::MakeMaker: 0
-dynamic_config: 1
-generated_by: 'ExtUtils::MakeMaker version 6.66, CPAN::Meta::Converter version 2.120921'
-license: unknown
-meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
-name: Net-SSLGlue
-no_index:
-  directory:
-    - t
-    - inc
+    ExtUtils::MakeMaker:  0
+build_requires:
+    ExtUtils::MakeMaker:  0
 requires:
-  IO::Socket::SSL: 1.19
+    IO::Socket::SSL:  1.19
 resources:
-  repository: https://github.com/noxxi/p5-net-sslglue
-version: 1.051
+    repository:  https://github.com/noxxi/p5-net-sslglue
+no_index:
+    directory:
+        - t
+        - inc
+generated_by:       ExtUtils::MakeMaker version 6.57_05
+meta-spec:
+    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
+    version:  1.4
